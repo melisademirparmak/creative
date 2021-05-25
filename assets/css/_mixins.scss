@@ -1,0 +1,10 @@
+/* @BUTTONS */
+
+@mixin btn {
+  padding: 18px 25px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 20px;
+}

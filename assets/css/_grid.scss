@@ -1,0 +1,56 @@
+/* @Container */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+.col-lg {
+  max-width: 650px;
+  margin: 0 auto;
+}
+/* @Columns */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columns {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-3 {
+  flex: 0 0 calc(100% / 3);
+  max-width: calc(100% / 3);
+}
+
+.flex-4 {
+  flex: 0 0 calc(100% / 4);
+  max-width: calc(100% / 4);
+  
+}
+
+.relative {
+  position: relative;
+}

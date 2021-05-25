@@ -1,0 +1,74 @@
+@import "./mixins";
+@import "./variables";
+
+.bg-image {
+  background: linear-gradient(
+      (to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%)
+    ),
+    url(../img/img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+
+  nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: $first-color;
+
+    &.active {
+      background: $white-color;
+      color: $black-color;
+      z-index: 9999;
+      a:hover {
+        color: $second-color;
+      }
+    }
+
+    a {
+      font-size: 20px;
+      font-weight: 900;
+      &:hover {
+        color: $white-color;
+        cursor: pointer;
+      }
+    }
+    ul li a {
+      font-size: 16px;
+    }
+  }
+
+  .text-center {
+    h1 {
+      font-size: 53px;
+      font-weight: 400;
+      color: $white-color;
+    }
+
+    p {
+      color: $first-color;
+      margin-top: 20px;
+      font-size: 19px;
+      line-height: 1.5;
+    }
+    .btn-orange {
+      @include btn();
+      background-color: $second-color;
+      border: 1px solid $second-color;
+      color: $white-color;
+    }
+  }
+  @media screen and (max-width: 860px) {
+    .text-center {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
